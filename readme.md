@@ -22,7 +22,12 @@ You will be prompted to select the maximum analysis region. That's it. You shoul
 The [documentation](https://www.qsl.net/kd2bd/splat.pdf) of SPLAT! can be found in official SPLAT! website. The documentation describes usage of SPLAT! and has all the commands used with SPLAT!.
 
 ## Elevation data
-There are lots of sources you can get SRTM data from. It is comparatively easy to get data from the site [viewfinderpanoramas.org](http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm). Simply click the regions you want and zip file will be downloaded with SRTM files for those regions. These files contains files with .hgt format. You need to convert these .hgt file to .sdf file for SPLAT!.
+There are lots of sources you can get SRTM data from. There are two kind of SRTM data that are available. They are SRTM1 (1-arc second sampling) and SRTM3(3-arc second sampling). 
+
+- SRTM1 : 1 second in angular units = 1/60 minutes = 1/3600 degrees  
+- SRTM3 : 3 arc second is equivalent to = 3/3600 degrees = 1/1200 degrees  
+
+It is comparatively easy to get data from the site [viewfinderpanoramas.org](http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm) where you will get SRTM3 data. Simply click the regions you want and zip file will be downloaded with SRTM3 files for those regions. These files contains files with .hgt format. You need to convert these .hgt file to .sdf file for SPLAT!.
 
 Make a folder named SPLAT in your directory. Copy the script given below in file ```hgt_to_sdf.sh```. This script will convert SRTM .hgt files to .sdf files which SPLAT! can read. 
 ```
